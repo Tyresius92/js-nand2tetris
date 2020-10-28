@@ -1,4 +1,4 @@
-import Bit from '../Bit';
+import { Bit } from '../types';
 import Xor from '../Xor';
 
 const { OFF, ON } = Bit;

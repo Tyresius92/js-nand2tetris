@@ -4,7 +4,11 @@
     "es6": true,
     "jest": true
   },
-  "extends": ["eslint:recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -15,7 +19,9 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": [],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "rules": {
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single", {"avoidEscape": true}],
@@ -45,6 +51,7 @@
     "no-return-assign": "error",
     "no-unmodified-loop-condition": "error",
     "no-unused-expressions": "error",
+    "no-unused-vars": "error",
     "yoda": "error",
     "no-undefined": "error",
     "brace-style": "error",
@@ -59,7 +66,6 @@
       }
     ],
     "max-lines": ["error", 500],
-    "max-params": ["error", 3],
     "multiline-comment-style": ["error", "separate-lines"],
     "no-continue": "error",
     "no-lonely-if": "error",

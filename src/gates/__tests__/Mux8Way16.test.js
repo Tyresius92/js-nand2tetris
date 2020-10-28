@@ -1,4 +1,4 @@
-import Bit from '../Bit';
+import { Bit } from '../types';
 import Mux8Way16 from '../Mux8Way16';
 
 const { OFF, ON } = Bit;

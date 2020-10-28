@@ -1,4 +1,4 @@
-import Bit from '../Bit';
+import { Bit } from '../types';
 import Or8Way from '../Or8Way';
 
 const { OFF, ON } = Bit;

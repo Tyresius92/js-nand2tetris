@@ -1,4 +1,4 @@
-import Bit from './Bit';
+import { Bit } from './types';
 import And from './And';
 import Not from './Not';
 

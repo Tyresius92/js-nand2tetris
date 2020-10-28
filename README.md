@@ -40,7 +40,7 @@ This is my ESLint config. Again, this is pretty standard across all my repos. I'
 
 - [Create React App Wrapper](https://github.com/Tyresius92/cra-wrapper)
 - [Create Apollo Server](https://github.com/Tyresius92/create-apollo-server)
-- TODO: Abstract out a "Node Template" from `Create Apollo Server` to generate node projects that don't require Apollo.
+- Next up: Abstract out a "Node Template" from `Create Apollo Server` to generate node projects that don't require Apollo.
 
 ### .prettierrc.json 
 

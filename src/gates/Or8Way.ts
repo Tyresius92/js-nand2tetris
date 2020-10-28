@@ -1,8 +1,8 @@
-import Bit from './Bit';
+import { Bit } from './types';
 import Or from './Or';
 
-const Or8Way = (input: [Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]): Bit => {
-  return Or(
+const Or8Way = (input: [Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]): Bit =>
+  Or(
     input[0],
     Or(
       input[1],
@@ -12,6 +12,5 @@ const Or8Way = (input: [Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]): Bit => {
       )
     )
   );
-};
 
 export default Or8Way;

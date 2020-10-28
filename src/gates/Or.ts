@@ -1,4 +1,4 @@
-import Bit from './Bit';
+import { Bit } from './types';
 import Nand from './Nand';
 import Not from './Not';
 
