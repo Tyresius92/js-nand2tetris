@@ -1,0 +1,84 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "settings": {},
+  "parserOptions": {
+    "ecmaFeatures": {},
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [],
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single", {"avoidEscape": true}],
+    "semi": ["error", "always"],
+    "array-callback-return": "error",
+    "complexity": ["error", 15],
+    "consistent-return": "error",
+    "curly": "error",
+    "default-case": "error",
+    "default-param-last": "error",
+    "dot-location": ["error", "property"],
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "no-alert": "error",
+    "no-else-return": [
+      "error",
+      {
+        "allowElseIf": false
+      }
+    ],
+    "no-empty-function": "error",
+    "no-eval": "error",
+    "no-floating-decimal": "error",
+    "no-lone-blocks": "error",
+    "no-var": "error",
+    "no-param-reassign": "error",
+    "no-return-assign": "error",
+    "no-unmodified-loop-condition": "error",
+    "no-unused-expressions": "error",
+    "yoda": "error",
+    "no-undefined": "error",
+    "brace-style": "error",
+    "camelcase": "error",
+    "eol-last": ["error", "always"],
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "max-lines": ["error", 500],
+    "max-params": ["error", 3],
+    "multiline-comment-style": ["error", "separate-lines"],
+    "no-continue": "error",
+    "no-lonely-if": "error",
+    "no-mixed-operators": "error",
+    "no-multi-assign": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    "no-negated-condition": "error",
+    "no-nested-ternary": "error",
+    "no-trailing-spaces": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "no-duplicate-imports": "error",
+    "no-useless-rename": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error"
+  }
+}

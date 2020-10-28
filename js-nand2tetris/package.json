@@ -1,0 +1,34 @@
+{
+  "name": "js-nand2tetris",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./src/* --colors",
+    "watch": "jest ./src/* --colors --watch",
+    "start": "nodemon --exec babel-node src/index.js",
+    "prettify": "prettier --config .prettierrc.json --ignore-path .prettierignore --write \"src/**/*.js\"",
+    "checkPrettier": "prettier --config .prettierrc.json --ignore-path .prettierignore --check \"src/**/*.js\"",
+    "lint": "node_modules/.bin/eslint --color --ext js,jsx ./src",
+    "lintify": "node_modules/.bin/eslint --color --fix --ext js,jsx ./src",
+    "fix": "npm run prettify && npm run lintify && npm run sniff",
+    "smellsGood": "node scripts/echo \"Great success!! Your code smells goooood!\" --font-color 92",
+    "sniff": "npm run checkPrettier && npm run lint && npm run smellsGood"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "babel-jest": "^26.6.1",
+    "eslint": "^7.12.0",
+    "jest": "^26.6.1",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  }
+}
