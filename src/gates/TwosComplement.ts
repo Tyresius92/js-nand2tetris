@@ -38,8 +38,6 @@ const TwosComplement = (
   Bit,
   Bit,
   Bit
-] => {
-  return Incrementer(Not16(x));
-};
+] => Incrementer(Not16(x));
 
 export default TwosComplement;

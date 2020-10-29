@@ -1,8 +1,6 @@
 import { Bit, AluOptions } from './types';
 import And16 from './And16';
 
-const { ON, OFF } = Bit;
-
 const ArithmeticLogicUnit = (
   x: [
     Bit,
@@ -41,7 +39,27 @@ const ArithmeticLogicUnit = (
     Bit
   ],
   options: AluOptions
-) => {
+): [
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit,
+  Bit
+] => {
+  // console log to silence sniff for now
+  console.log(options);
+
   return And16(x, y);
 };
 

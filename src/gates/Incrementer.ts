@@ -39,8 +39,8 @@ const Incrementer = (
   Bit,
   Bit,
   Bit
-] => {
-  return Add16(input, [
+] =>
+  Add16(input, [
     OFF,
     OFF,
     OFF,
@@ -58,6 +58,5 @@ const Incrementer = (
     OFF,
     ON,
   ]);
-};
 
 export default Incrementer;
