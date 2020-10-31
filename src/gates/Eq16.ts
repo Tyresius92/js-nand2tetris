@@ -2,10 +2,8 @@ import { Bit, Bus16 } from './types';
 import Eq from './Eq';
 import And from './And';
 
-const { ON, OFF } = Bit;
-
-const Eq16 = (a: Bus16, b: Bus16): Bit => {
-  return And(
+const Eq16 = (a: Bus16, b: Bus16): Bit =>
+  And(
     Eq(a[0], b[0]),
     And(
       Eq(a[1], b[1]),
@@ -48,6 +46,5 @@ const Eq16 = (a: Bus16, b: Bus16): Bit => {
       )
     )
   );
-};
 
 export default Eq16;
