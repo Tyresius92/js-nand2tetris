@@ -1,66 +1,11 @@
-import { Bit } from './types';
+import { Bus16 } from './types';
 import HalfAdder from './HalfAdder';
 import FullAdder from './FullAdder';
 
-const Add16 = (
-  a: [
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit
-  ],
-  b: [
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit
-  ]
-): [
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit
-] => {
+const Add16 = (a: Bus16, b: Bus16): Bus16 => {
   // TODO: Measure the performance of this guy,
   // and implement it better if performance sucks
   // Since we're using local vars, I _think_ we'll be okay?
-  // C would totally compile this junk right out of there.
 
   const { sum: zeroSum, carry: zeroCarry } = HalfAdder(a[15], b[15]);
   const { sum: oneSum, carry: oneCarry } = FullAdder(a[14], b[14], zeroCarry);

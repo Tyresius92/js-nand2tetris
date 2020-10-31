@@ -1,43 +1,7 @@
-import { Bit } from './types';
+import { Bus16 } from './types';
 import Not from './Not';
 
-const Not16 = (
-  input: [
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit
-  ]
-): [
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit
-] => [
+const Not16 = (input: Bus16): Bus16 => [
   Not(input[0]),
   Not(input[1]),
   Not(input[2]),

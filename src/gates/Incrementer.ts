@@ -1,62 +1,7 @@
-import { Bit } from './types';
+import { Bus16 } from './types';
 import Add16 from './Add16';
+import { ONE } from './constants';
 
-const { ON, OFF } = Bit;
-
-const Incrementer = (
-  input: [
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit
-  ]
-): [
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit
-] =>
-  Add16(input, [
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    OFF,
-    ON,
-  ]);
+const Incrementer = (input: Bus16): Bus16 => Add16(input, ONE);
 
 export default Incrementer;

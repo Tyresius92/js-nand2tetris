@@ -1,7 +1,7 @@
-import { Bit } from './types';
+import { Bit, Bus8 } from './types';
 import Or from './Or';
 
-const Or8Way = (input: [Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]): Bit =>
+const Or8Way = (input: Bus8): Bit =>
   Or(
     input[0],
     Or(

@@ -1,61 +1,7 @@
-import { Bit } from './types';
+import { Bus16 } from './types';
 import And from './And';
 
-const And16 = (
-  a: [
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit
-  ],
-  b: [
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit
-  ]
-): [
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit
-] => [
+const And16 = (a: Bus16, b: Bus16): Bus16 => [
   And(a[0], b[0]),
   And(a[1], b[1]),
   And(a[2], b[2]),

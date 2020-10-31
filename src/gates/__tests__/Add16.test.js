@@ -157,6 +157,26 @@ describe('Add16', () => {
       ON,
     ];
 
+    const NEGATIVE_TWO = [
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      ON,
+      OFF,
+    ];
+
     expect(Add16(NEGATIVE_ONE, ONE)).toEqual(ZERO);
+    expect(Add16(NEGATIVE_ONE, NEGATIVE_ONE)).toEqual(NEGATIVE_TWO);
   });
 });

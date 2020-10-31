@@ -1,62 +1,7 @@
-import { Bit } from './types';
+import { Bit, Bus16 } from './types';
 import Mux from './Mux';
 
-const Mux16 = (
-  a: [
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit
-  ],
-  b: [
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit,
-    Bit
-  ],
-  sel: Bit
-): [
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit,
-  Bit
-] => [
+const Mux16 = (a: Bus16, b: Bus16, sel: Bit): Bus16 => [
   Mux(a[0], b[0], sel),
   Mux(a[1], b[1], sel),
   Mux(a[2], b[2], sel),
