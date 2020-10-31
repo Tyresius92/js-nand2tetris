@@ -1,6 +1,6 @@
 import Bit from './Bit';
 
-interface aluOptions {
+interface AluOptions {
   zx: Bit;
   nx: Bit;
   zy: Bit;
@@ -9,4 +9,4 @@ interface aluOptions {
   no: Bit;
 }
 
-export default aluOptions;
+export default AluOptions;
