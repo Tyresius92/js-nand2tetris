@@ -18,11 +18,8 @@ This is a shared interface type for the Adder gates. Most of the simpler gates r
 
 ### AluOptions
 
-This is part of the input arguments to the Arithmetic Logic Unit.
+This is part of the input arguments to the Arithmetic Logic Unit. These represent the options which control what the ALU does with the two input buses. 
 
 ### AluResult
 
-This defines the output shape of the Arithmetic Logic Unit. 
-
-
-
+This defines the output shape of the Arithmetic Logic Unit. It contains the output bus, as well as 2 additional bits which flag if the output equals zero or negative. 
