@@ -86,5 +86,13 @@
     "no-useless-rename": "error",
     "prefer-arrow-callback": "error",
     "prefer-const": "error"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "rules": {
+        "max-lines": "off"
+      }
+    }
+  ]
 }

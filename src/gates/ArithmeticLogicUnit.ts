@@ -1,11 +1,11 @@
 import { Bus16, AluOptions, AluResult } from './types';
-import And16 from './And16';
-import Mux16 from './Mux16';
-import Not16 from './Not16';
-import Add16 from './Add16';
-import Eq16 from './Eq16';
+import And16 from './and/And16';
+import Mux16 from './multiplexors/Mux16';
+import Not16 from './negation/Not16';
+import Add16 from './arithmetic/Add16';
+import Eq16 from './equality/Eq16';
 import { ZERO } from './constants';
-import IsNeg16 from './IsNeg16';
+import IsNeg16 from './negation/IsNeg16';
 
 const ArithmeticLogicUnit = (
   x: Bus16,

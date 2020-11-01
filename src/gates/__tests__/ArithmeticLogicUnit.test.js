@@ -3,14 +3,14 @@ import ArithmeticLogicUnit from '../ArithmeticLogicUnit';
 
 // Other helpers
 import { ALL_OFF, ALL_ON, ZERO, ONE, NEGATIVE_ONE } from '../constants';
-import TwosComplement from '../TwosComplement';
-import Not16 from '../Not16';
-import And16 from '../And16';
-import Or16 from '../Or16';
-import Incrementer from '../Incrementer';
-import Add16 from '../Add16';
-import Eq16 from '../Eq16';
-import IsNeg16 from '../IsNeg16';
+import TwosComplement from '../negation/TwosComplement';
+import Not16 from '../negation/Not16';
+import And16 from '../and/And16';
+import Or16 from '../or/Or16';
+import Incrementer from '../arithmetic/Incrementer';
+import Add16 from '../arithmetic/Add16';
+import Eq16 from '../equality/Eq16';
+import IsNeg16 from '../negation/IsNeg16';
 
 const { ON, OFF } = Bit;
 
